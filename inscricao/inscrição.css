@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 13px;
+    border-radius: 10px;
+    width: 100%;
+    max-width:400px;
+}
+.inputBox{
+    position: relative;
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.labelInput{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput, 
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: rgb(0, 50, 197);
+}
+#submit{
+    background-color: rgb(41, 41, 174);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+#opcaoCargo{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+#arquivo{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
